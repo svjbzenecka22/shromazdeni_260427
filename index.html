@@ -50,11 +50,6 @@
       -webkit-text-size-adjust: 100%;
     }
 
-    img,
-    iframe {
-      max-width: 100%;
-    }
-
     a {
       color: var(--primary);
       text-decoration: none;
@@ -269,10 +264,6 @@
       background: var(--primary-dark);
     }
 
-    .btn-secondary {
-      background: var(--surface-soft);
-    }
-
     .summary-grid {
       display: grid;
       gap: 12px;
@@ -376,22 +367,6 @@
       gap: 10px;
     }
 
-    .preview {
-      margin-top: 14px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      overflow: hidden;
-      background: #f9fbff;
-    }
-
-    .preview iframe {
-      display: block;
-      width: 100%;
-      height: 340px;
-      border: 0;
-      background: #fff;
-    }
-
     .mini {
       color: var(--muted);
       font-size: 0.95rem;
@@ -487,10 +462,6 @@
       .card {
         padding: 20px;
       }
-
-      .preview iframe {
-        height: 300px;
-      }
     }
 
     @media (max-width: 640px) {
@@ -528,10 +499,6 @@
       .agenda {
         padding-left: 20px;
       }
-
-      .preview iframe {
-        height: 260px;
-      }
     }
 
     @media (max-width: 380px) {
@@ -549,7 +516,6 @@
       .topbar,
       .hero-actions,
       .doc-actions,
-      .preview,
       .footer {
         display: none !important;
       }
@@ -627,7 +593,7 @@
 
             <div class="hero-actions">
               <a class="btn btn-primary" href="#dokumenty">Zobrazit dokumenty</a>
-              <a class="btn btn-secondary" href="#program">Přejít na program</a>
+              <a class="btn" href="#program">Přejít na program</a>
             </div>
 
             <div class="note ok">
@@ -693,7 +659,7 @@
 
           <p class="mini" style="margin-top: 16px;">
             Tato stránka slouží jako přehledný rozcestník. Oficiální texty dokumentů jsou uvedeny
-            v samostatných HTML souborech níže.
+            v samostatných HTML souborech.
           </p>
         </aside>
       </div>
@@ -702,9 +668,9 @@
     <section class="section" id="dokumenty">
       <div class="container">
         <div class="card">
-          <h2>Dokumenty ke zobrazení a tisku</h2>
+          <h2>Dokumenty ke zobrazení</h2>
           <p class="mini">
-            Každý dokument můžete otevřít samostatně na celé stránce, případně si jej vytisknout přímo z prohlížeče.
+            Dokumenty se otevírají jako samostatné HTML stránky.
           </p>
 
           <div class="docs-list">
@@ -718,10 +684,6 @@
               </div>
               <div class="doc-actions">
                 <a class="btn btn-primary" href="pozvanka.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
-                <a class="btn" href="pozvanka.html" download>Stáhnout</a>
-              </div>
-              <div class="preview">
-                <iframe src="pozvanka.html" title="Náhled dokumentu Pozvánka"></iframe>
               </div>
             </article>
 
@@ -735,10 +697,6 @@
               </div>
               <div class="doc-actions">
                 <a class="btn btn-primary" href="plna_moc.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
-                <a class="btn" href="plna_moc.html" download>Stáhnout</a>
-              </div>
-              <div class="preview">
-                <iframe src="plna_moc.html" title="Náhled dokumentu Plná moc"></iframe>
               </div>
             </article>
 
@@ -752,13 +710,6 @@
               </div>
               <div class="doc-actions">
                 <a class="btn btn-primary" href="zmocneni_spolecneho_zastupce.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
-                <a class="btn" href="zmocneni_spolecneho_zastupce.html" download>Stáhnout</a>
-              </div>
-              <div class="preview">
-                <iframe
-                  src="zmocneni_spolecneho_zastupce.html"
-                  title="Náhled dokumentu Zmocnění společného zástupce"
-                ></iframe>
               </div>
             </article>
           </div>
